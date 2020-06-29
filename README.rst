@@ -47,7 +47,7 @@ Then,
 .. code-block:: bash
 
     $ git config --global core.autocrlf input
-    $ pip install git+https://github.com/sohrabtowfighi/quantulum
+    $ pip install git+https://github.com/sqrhussain/quantulum
 
 Usage
 -----
