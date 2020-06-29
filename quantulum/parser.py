@@ -71,7 +71,11 @@ def extract_spellout_values(text):
             try:
                 scale, increment = 1, float(word.lower())
             except ValueError:
-                scale, increment = r.NUMWORDS[word.lower()]
+                try:
+                    scale, increment = r.NUMWORDS[word.lower()]
+                except KeyError:
+                    continue
+
             curr = curr * scale + increment
             if scale > 100:
                 result += curr
@@ -139,10 +143,13 @@ def get_values(item):
         values = [values[0]]
     elif fract_separator:
         values = value.split()
-        if len(values) > 1:
-            values = [float(values[0]) + float(Fraction(values[1]))]
+        if len(values) == 2:
+            try:
+                values = [float(values[0]) + float(Fraction(values[1]))]
+            except ZeroDivisionError:
+                values = [float(value) for value in values]
         else:
-            values = [float(Fraction(values[0]))]
+            values = [float(value) for value in values]
     else:
         values = [float(re.sub(r'-$', '', value))]
 
@@ -255,7 +262,8 @@ def parse_unit(item, group, slash):
 
     else:
         new_power = (-1 if slash else 1)
-
+    
+    surface = re.sub(r'-+', '', surface)
     return surface, new_power
 
 
@@ -477,7 +485,7 @@ def parse(text, verbose=False):
         groups = dict([i for i in list(item.groupdict().items()) if i[1] and \
                        i[1].strip()])
         logging.debug('Quantity found: %s', groups)
-
+        uncert = None
         try:
             uncert, values = get_values(item)
         except ValueError as err:

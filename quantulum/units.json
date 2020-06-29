@@ -456,14 +456,6 @@
         "symbols": ["qr"]
     },
     {
-        "name": "carat",
-        "surfaces": ["carat"],
-        "entity": "mass",
-        "URI": "https://en.wikipedia.org/wiki/Carat_(mass)",
-        "dimensions": [],
-        "symbols": ["ct"]
-    },
-    {
         "name": "bushel",
         "surfaces": ["bushel"],
         "entity": "mass",
@@ -789,7 +781,7 @@
         "entity": "temperature",
         "URI": "https://en.wikipedia.org/wiki/Celsius",
         "dimensions": [],
-        "symbols": ["C", "°C"]
+        "symbols": ["C", "°C", "degree C", "ºC", "C"]
     },
     {
         "name": "degree fahrenheit",
@@ -998,14 +990,6 @@
         "URI": "https://en.wikipedia.org/wiki/Atmosphere_(unit)",
         "dimensions": [],
         "symbols": ["atm"]
-    },
-    {
-        "name": "technical atmosphere",
-        "surfaces": ["technical atmosphere"],
-        "entity": "pressure",
-        "URI": "https://en.wikipedia.org/wiki/Technical_atmosphere",
-        "dimensions": [],
-        "symbols": ["at"]
     },
     {
         "name": "barye",
@@ -1246,6 +1230,22 @@
         "URI": "https://en.wikipedia.org/wiki/Volt-ampere",
         "dimensions": [{"base": "volt", "power": 1}, {"base": "ampere", "power": 1}],
         "symbols": ["VA"]
+    },
+    {
+        "name": "kilo volt-ampere",
+        "surfaces": ["kilo volt-ampere", "kilo volt ampere", "kilo voltampere"],
+        "entity": "power",
+        "URI": "https://en.wikipedia.org/wiki/Volt-ampere",
+        "dimensions": [{"base": "volt", "power": 1}, {"base": "ampere", "power": 1}],
+        "symbols": ["kVA","KVA"]
+    },
+    {
+        "name": "mega volt-ampere",
+        "surfaces": ["mega volt-ampere", "mega volt ampere", "mega voltampere"],
+        "entity": "power",
+        "URI": "https://en.wikipedia.org/wiki/Volt-ampere",
+        "dimensions": [{"base": "volt", "power": 1}, {"base": "ampere", "power": 1}],
+        "symbols": ["MVA"]
     },
     {
         "name": "newton",
@@ -1877,7 +1877,23 @@
         "entity": "electric potential",
         "URI": "https://en.wikipedia.org/wiki/Volt",
         "dimensions": [],
-        "symbols": ["V"]
+        "symbols": ["volt", "V"]
+    },
+    {
+        "name": "kilovolt",
+        "surfaces": ["kilovolt"],
+        "entity": "electric potential",
+        "URI": "https://en.wikipedia.org/wiki/Volt",
+        "dimensions": [],
+        "symbols": ["kilo volt", "kilovolt", "kV", "KV", "kV-", "KV-"]
+    },
+    {
+        "name": "megavolt",
+        "surfaces": ["megavolt"],
+        "entity": "electric potential",
+        "URI": "https://en.wikipedia.org/wiki/Volt",
+        "dimensions": [],
+        "symbols": ["mega volt", "kilovolt", "MV"]
     },
     {
         "name": "ohm",
@@ -1950,14 +1966,6 @@
         "URI": "https://en.wikipedia.org/wiki/Henry_(unit)",
         "dimensions": [],
         "symbols": ["H"]
-    },
-    {
-        "name": "ampere-turn",
-        "surfaces": ["ampere-turn", "ampere turn"],
-        "entity": "magnetomotive force",
-        "URI": "https://en.wikipedia.org/wiki/Ampere-turn",
-        "dimensions": [],
-        "symbols": ["AT", "At"]
     },
     {
         "name": "oersted",
