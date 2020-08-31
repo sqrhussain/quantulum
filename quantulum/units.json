@@ -1,5 +1,77 @@
 [
     {
+        "name": "dimensionless",
+        "surfaces": ["dimensionless"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Dimensionless_quantity",
+        "dimensions": [],
+        "symbols": []
+    },
+    {
+        "name": "percentage",
+        "surfaces": ["percentage", "percent"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Percentage",
+        "dimensions": [],
+        "symbols": ["%", "pct", "pct."]
+    },
+    {
+        "name": "per mille",
+        "surfaces": ["per mille", "permill", "permil", "permille", "per mil", "per mill"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Per_mille",
+        "dimensions": [],
+        "symbols": ["‰"]
+    },
+    {
+        "name": "parts-per-million",
+        "surfaces": ["parts-per-million", "parts per million"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Parts-per_notation",
+        "dimensions": [],
+        "symbols": ["ppm"]
+    },
+    {
+        "name": "parts-per-billion",
+        "surfaces": ["parts-per-billion", "parts per billion"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Parts-per_notation",
+        "dimensions": [],
+        "symbols": ["ppb"]
+    },
+    {
+        "name": "parts-per-trillion",
+        "surfaces": ["parts-per-trillion", "parts per trillion"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Parts-per_notation",
+        "dimensions": [],
+        "symbols": ["ppt"]
+    },
+    {
+        "name": "basis point",
+        "surfaces": ["basis point", "bip", "beep", "permyriad", "per myriad", "per ten thousand"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Basis_point",
+        "dimensions": [],
+        "symbols": ["bp", "‱"]
+    },
+    {
+        "name": "count",
+        "surfaces": ["instance", "time", "count"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Count_data",
+        "dimensions": [],
+        "symbols": []
+    },
+    {
+        "name": "turn",
+        "surfaces": ["turn", "revolution", "cycle", "circle"],
+        "entity": "dimensionless",
+        "URI": "https://en.wikipedia.org/wiki/Turn_(geometry)",
+        "dimensions": [],
+        "symbols": []
+    },
+    {
         "name": "barn",
         "surfaces": ["barn"],
         "entity": "length",
