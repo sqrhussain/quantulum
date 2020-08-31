@@ -153,14 +153,16 @@ def load_units():
         names[unit['name']] = obj
 
         for symbol in unit['symbols']:
+            symbol = re.sub(r'-+', '', symbol)
             surfaces[symbol].append(obj)
             lowers[symbol.lower()].append(obj)
             if unit['entity'] == 'currency':
                 symbols[symbol].append(obj)
 
         for surface in unit['surfaces']:
-            surfaces[surface].append(obj)
-            lowers[surface.lower()].append(obj)
+            clean_surface = re.sub(r'-+', '', surface)
+            surfaces[clean_surface].append(obj)
+            lowers[clean_surface.lower()].append(obj)
             split = surface.split()
             index = None
             if ' per ' in surface:
