@@ -181,7 +181,7 @@
         "entity": "length",
         "URI": "https://en.wikipedia.org/wiki/Micrometre",
         "dimensions": [],
-        "symbols": ["µm","μm"]
+        "symbols": ["µm"]
     },
     {
         "name": "nanometre",
@@ -1357,7 +1357,7 @@
         "entity": "time",
         "URI": "https://en.wikipedia.org/wiki/Microsecond",
         "dimensions": [],
-        "symbols": ["μs","µs", "μsec","µsec"]
+        "symbols": ["μs", "μsec"]
     },
     {
         "name": "nanosecond",
