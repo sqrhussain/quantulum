@@ -1357,7 +1357,7 @@
         "entity": "time",
         "URI": "https://en.wikipedia.org/wiki/Microsecond",
         "dimensions": [],
-        "symbols": ["μs", "μsec"]
+        "symbols": ["µs", "µsec"]
     },
     {
         "name": "nanosecond",
@@ -1957,7 +1957,7 @@
         "entity": "capacitance",
         "URI": "https://en.wikipedia.org/wiki/Farad",
         "dimensions": [],
-        "symbols": ["μF"]
+        "symbols": ["µF"]
     },
     {
         "name": "henry",
